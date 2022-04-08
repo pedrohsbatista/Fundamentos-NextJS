@@ -1,0 +1,11 @@
+.roxo {
+    height: 100vh;
+    background-color: #27004b;
+    color: #fff;
+}
+
+.roxo h1 {
+    margin: 0;
+}
+
+/* Não é possível usar um seletor de elemento em arquivos module.css Ex: h1 */
