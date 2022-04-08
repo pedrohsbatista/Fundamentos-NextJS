@@ -1,3 +1,5 @@
+import Layout from "../components/Layout"
+
 export default function Jsx() {
     const a = 3
     const b = 4
@@ -12,14 +14,16 @@ export default function Jsx() {
     }
 
     return (
-        <div>
-            <h1>JSX é um conceito central</h1>
-            {subTitulo}
-            {content()}
-            <h2>{"conceitos jsx".toUpperCase()}</h2>
-            <p>
-                {JSON.stringify({nome: 'Pedro', idade: 10 })}
-            </p>
-        </div>
+        <Layout titulo="Entendendo o JSX">
+            <div>
+                <h1>JSX é um conceito central</h1>
+                {subTitulo}
+                {content()}
+                <h2>{"conceitos jsx".toUpperCase()}</h2>
+                <p>
+                    {JSON.stringify({nome: 'Pedro', idade: 10 })}
+                </p>
+            </div>
+        </Layout>       
     )
 }
